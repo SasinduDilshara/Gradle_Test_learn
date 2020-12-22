@@ -1,0 +1,35 @@
+[package]
+org = "ballerinax"
+name = "postgresql"
+version = "0.6.3"
+
+[[dependency]]
+org = "ballerina"
+name = "sql"
+version = "0.5.3"
+
+[[dependency]]
+org = "ballerina"
+name = "crypto"
+version = "1.0.4"
+
+[[platform.java11.dependency]]
+path = "../postgresql-native/build/libs/postgresql-native-0.6.3-SNAPSHOT.jar"
+groupId = "org.ballerinalang"
+artifactId = "postgresql-native"
+version = "0.6.3-SNAPSHOT"
+
+
+[[platform.java11.dependency]]
+path = "/home/sasindu/Desktop/Important/Project/Learning/Gradle/Test_Project/3/Gradle_Test_Real/postgresql-ballerina/build/target/jballerina-tools-2.0.0-Preview8-SNAPSHOT/repo/balo/ballerina/sql/0.5.3/ballerina-sql-java11-0.5.3.balo"
+groupId = "org.ballerinalang"
+artifactId = "ballerina-sql"
+version = "0.5.3-SNAPSHOT"
+
+
+[[platform.java11.dependency]]
+path = "./lib/postgresql-connector-java-42.2.18.jar"
+artafactId = "postgresql-connector-java"
+groupId = "postgresql"
+scope = "testOnly"
+version = "42.2.18"

@@ -222,9 +222,9 @@ subprojects {
         ballerinaStdLibs "org.ballerinalang:auth-ballerina:${stdlibAuthVersion}"
         ballerinaStdLibs "org.ballerinalang:http-ballerina:${stdlibHttpVersion}"
 
-        externalJars (group: 'postgresql', name: 'postgresql-connector-java', version: "${postgreSQLDriverVersion}") {
-            transitive = false
-        }
+        // externalJars (group: 'postgresql', name: 'postgresql-connector-java-42.2.18.jar', version: "${postgreSQLDriverVersion}") {
+        //     transitive = false
+        // }
     }
 }
 

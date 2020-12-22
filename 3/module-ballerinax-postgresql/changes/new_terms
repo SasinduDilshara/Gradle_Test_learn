@@ -21,3 +21,5 @@
 9. Maven-publish => which allows you to publish build artifacts to an Apache Maven repository.
 
 10. You can use the onlyIf() method to attach a predicate to a task. The task’s actions are only executed if the predicate evaluates to true.
+
+11. Changing the value of the transitive flag to false prevents the download of transitive dependencies, so you'll have to add whatever is required yourself
