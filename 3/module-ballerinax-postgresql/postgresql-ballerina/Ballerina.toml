@@ -1,35 +1,36 @@
 [package]
 org = "ballerinax"
 name = "postgresql"
-version = "0.6.3"
+version = "@toml.version@"
 
 [[dependency]]
 org = "ballerina"
 name = "sql"
-version = "0.5.3"
+version = "@stdlib.sql.version@"
 
 [[dependency]]
 org = "ballerina"
 name = "crypto"
-version = "1.0.4"
+version = "@stdlib.crypto.version@"
 
 [[platform.java11.dependency]]
-path = "../postgresql-native/build/libs/postgresql-native-0.6.3-SNAPSHOT.jar"
+path = "../postgresql-native/build/libs/postgresql-native-@project.version@.jar"
 groupId = "org.ballerinalang"
-artifactId = "postgresql-native"
-version = "0.6.3-SNAPSHOT"
+artifactId = "mysql-native"
+version = "@project.version@"
 
 
 [[platform.java11.dependency]]
-path = "/home/sasindu/Desktop/Important/Project/Learning/Gradle/Test_Project/3/Gradle_Test_Real/postgresql-ballerina/build/target/jballerina-tools-2.0.0-Preview8-SNAPSHOT/repo/balo/ballerina/sql/0.5.3/ballerina-sql-java11-0.5.3.balo"
+path = "@project.path@/repo/balo/ballerina/sql/@stdlib.sql.version@/ballerina-sql-java11-0.5.3.balo"
+# path = "@project.path@/repo/balo/ballerina/sql/@stdlib.sql.version@/platform/java11/sql-native-@stdlib.sql.native.version@.jar"
 groupId = "org.ballerinalang"
 artifactId = "ballerina-sql"
-version = "0.5.3-SNAPSHOT"
+version = "@stdlib.sql.native.version@"
 
 
 [[platform.java11.dependency]]
-path = "./lib/postgresql-connector-java-42.2.18.jar"
+path = "./lib/postgresql-connector-java-8.0.21.jar"
 artafactId = "postgresql-connector-java"
 groupId = "postgresql"
 scope = "testOnly"
-version = "42.2.18"
+version = "8.0.17"
